@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 from calculator import add, sub, mul, div
 
+
 def principal():
     a = 10
     b = 5
