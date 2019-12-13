@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-from dynamic import argv
+from sys import argv
 
 
 def principal():

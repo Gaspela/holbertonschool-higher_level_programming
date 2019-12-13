@@ -1,8 +1,10 @@
 #!/usr/bin/python3
-from dynamic import argv
+from sys import argv
+
+
 def principal():
     print('{} argument'.format(len(argv) - 1), end='')
-    if len(argv) == 1:  
+    if len(argv) == 1:
         print('s.')
     elif len(argv) == 2:
         print(':')
@@ -12,4 +14,3 @@ def principal():
         print('{}: {}'.format(i, argv[i]))
 if __name__ == "__main__":
     principal()
-        
