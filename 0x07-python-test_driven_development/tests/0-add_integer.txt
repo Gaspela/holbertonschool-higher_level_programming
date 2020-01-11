@@ -1,0 +1,10 @@
+``add_integer`` function
+=========================
+
+using ``add_integer``
+-----------------------
+first import:
+
+    >>> add_integer = __import__('0-add_integer').add_integer
+
+now use ir:
