@@ -39,4 +39,10 @@ some tests:
     Traceback (most recent call last):
     TypeError: size must be an integer
 
-    
+    >>> print_square(6BKND)
+    Traceback (most recent call last):
+    SyntaxError: invalid syntax
+
+    >>> print_square()
+    Traceback (most recent call last):
+    TypeError: print_square() missing 1 required positional argument: 'size'
