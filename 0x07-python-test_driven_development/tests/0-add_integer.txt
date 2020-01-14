@@ -38,3 +38,15 @@ now use it:
     Traceback (most recent call last):
         ...
     TypeError: b must be an integer
+
+    >>> add_integer(6BKND)
+    Traceback (most recent call last):
+    SyntaxError: invalid syntax
+
+    >>> add_integer(float('nan'))
+    Traceback (most recent call last):
+    ValueError: cannot convert float NaN to integer
+
+    >>> add_integer(float('inf'))
+    Traceback (most recent call last):
+    OverflowError: cannot convert float infinity to integer
