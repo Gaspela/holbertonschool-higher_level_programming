@@ -5,7 +5,8 @@ def matrix_divided(matrix, div):
         (not all(type(row) is list for row in matrix)) or
             (not all(
             type(i) in (float, int) for row in matrix for i in row))):
-                raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+                raise TypeError("matrix must be a matrix (list of lists) \
+of integers/floats")
 
     for i, ls in enumerate(matrix):
         if len(ls) != len(matrix[i - 1]):
