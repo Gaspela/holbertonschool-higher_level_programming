@@ -3,6 +3,7 @@ class Rectangle:
     """Create class rectangle"""
 
     number_of_instances = 0
+    print_symbol = "#"
 
     def __init__(self, width=0, height=0):
         """init"""
@@ -44,14 +45,13 @@ class Rectangle:
         """return perimeter"""
         if self.area() is 0:
             return 0
-        return self.__width * 2 + self.__height * 2
+        return self.height * 2 + self.width * 2
 
     def __str__(self):
         newstring = ""
-        if self.width is 0 or self.height is 0:
-            return newstring
-        else:
-            return "\n".join(["#" * self.width] * self.height)
+        if self.area is 0:
+            return newstr
+        return "\n".join([str(self.print_symbol) * self.width] * self.height)
 
     def __repr__(self):
         return "Rectangle(%s, %s)" % (self.width, self.height)
