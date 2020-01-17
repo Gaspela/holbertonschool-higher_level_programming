@@ -1,4 +1,6 @@
-#!/usur/bin/python3
-    """Create rectangle"""
-    class Rectangle:
-        pass
+#!/usr/bin/python3
+"""Create rectangle"""
+
+
+class Rectangle:
+    pass
