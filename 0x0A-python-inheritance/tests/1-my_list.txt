@@ -1,0 +1,16 @@
+``MyList class`` function
+=========================
+
+using ``MyList class``
+-----------------------
+first import:
+
+    >>> MyList = __import__('1-my_list').MyList
+
+now use it:
+
+    >>> list = MyList([1, 'b', 10])
+    >>> list.print_sorted()
+    Traceback (most recent call last):
+    ...
+    TypeError: unorderable types: str() < int()
