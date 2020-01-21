@@ -14,3 +14,19 @@ now use it:
     Traceback (most recent call last):
     ...
     TypeError: unorderable types: str() < int()
+
+    >>> list = MyList([10, 5, 1])
+    >>> list.print_sorted()
+    [1, 5, 10]
+
+    >>> list = MyList([0, 1, 0, 1])
+    >>> list.print_sorted()
+    [0, 0, 1, 1]
+
+    >>> list = MyList([5, 101, -5])
+    >>> list.print_sorted()
+    [-5, 5, 101]
+
+    >>> list = MyList([-4, -10, -1000000])
+    >>> list.print_sorted()
+    [-1000000, -10, -4]
