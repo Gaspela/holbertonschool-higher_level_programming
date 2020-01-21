@@ -1,0 +1,49 @@
+using ``BaseGeometry``
+-----------------------
+first import:
+
+        >>> bg = __import__('7-base_geometry').BaseGeometry
+
+        >>> a = bg()
+
+now use it:
+
+        >>> a.integer_validator("test", -5)
+        Traceback (most recent call last):
+        ...
+        ValueError: butt must be greater than 0
+
+        >>> a.integer_validator("name", "sam")
+        Traceback (most recent call last):
+        ...
+        TypeError: butt must be an integer
+
+        >>> a.integer_validator("test", 0)
+        Traceback (most recent call last):
+        ...
+        ValueError: butt must be greater than 0
+
+        >>> a.integer_validator()
+        Traceback (most recent call last):
+        ...
+        TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+        >>> a.integer_validator("test", {1, 1})
+        Traceback (most recent call last):
+        ...
+        TypeError: test must be an integer
+
+        >>> a.integer_validator("test", (1,))
+        Traceback (most recent call last):
+        ...
+        TypeError: test must be an integer
+
+        >>> a.integer_validator("test", [1, 1])
+        Traceback (most recent call last):
+        ...
+        TypeError: test must be an integer
+
+        >>> a.integer_validator("test", None)
+        Traceback (most recent call last):
+        ...
+        TypeError: test must be an integer
