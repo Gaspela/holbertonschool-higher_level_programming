@@ -13,4 +13,3 @@ def read_lines(filename="", nb_lines=0):
             if linescnt < nb_lines:
                 print(lines, end="")
             linescnt += 1
-
