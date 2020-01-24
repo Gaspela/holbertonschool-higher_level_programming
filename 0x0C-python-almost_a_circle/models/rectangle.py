@@ -17,7 +17,7 @@ class Rectangle(Base):
     @property
     def width(self):
         """get width"""
-        return self.width
+        return self.__width
 
     @width.setter
     def width(self, value):
@@ -31,7 +31,7 @@ class Rectangle(Base):
     @property
     def height(self):
         """get height"""
-        return self.height
+        return self.__height
 
     @height.setter
     def height(self, value):
@@ -45,7 +45,7 @@ class Rectangle(Base):
     @property
     def x(self):
         """Get x"""
-        return self.x
+        return self.__x
 
     @x.setter
     def x(self, value):
@@ -59,7 +59,7 @@ class Rectangle(Base):
     @property
     def y(self):
         """Get y"""
-        return self.y
+        return self.__y
 
     @y.setter
     def y(self, value):
@@ -70,8 +70,17 @@ class Rectangle(Base):
             raise ValueError("y must be >= 0")
         self.__y = value
 
-        def area(self):
-            """
-            Area width * height
-            """
-            return self.width * self.height
+    def area(self):
+        """
+        Area width * height
+        """
+        return self.width * self.height
+    
+    def display(self):
+        """
+        For i in j
+        """
+        for i in range(self.y):
+            print("")
+        for j in range(self.height):
+            print(" " * self.x + "#" * self.width)
