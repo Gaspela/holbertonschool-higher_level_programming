@@ -91,6 +91,17 @@ class Rectangle(Base):
         """
         [Rectangle] (<id>) <x>/<y> - <width>/<height>
         """
-        return "[Rectangle] ({}) {}/{} - {}/{}".
+        return "[Rectangle] ({}) {}/{} - {}/{}"
         format(self.id, self.x, self.y, self.width, self.height)
-    
+    """*********************"""
+    def display(self):
+        """
+        print in stdout the Rectangle instance with the
+        character # by taking care of x and y
+        """
+        for i in range(self.y):
+            print("")
+        for j in range(self.height):
+            print(" " * self.x + "#" * self.width)
+        
+
