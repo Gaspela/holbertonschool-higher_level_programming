@@ -87,21 +87,29 @@ class Rectangle(Base):
         for j in range(self.height):
             print(" " * self.x + "#" * self.width)
     """*********************"""
+
     def __str__(self):
         """
         [Rectangle] (<id>) <x>/<y> - <width>/<height>
         """
-        return "[Rectangle] ({}) {}/{} - {}/{}"
-        format(self.id, self.x, self.y, self.width, self.height)
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(
+            self.id, self.x, self.y, self.width, self.height)
     """*********************"""
-    def display(self):
-        """
-        print in stdout the Rectangle instance with the
-        character # by taking care of x and y
-        """
-        for i in range(self.y):
-            print("")
-        for j in range(self.height):
-            print(" " * self.x + "#" * self.width)
-        
 
+    def update(self, *args, **kwargs):
+        """
+        adding the public method def update(self, *args):
+        that assigns an argument to each attribute
+        """
+        if args:
+            for i, value in enumerate(args):
+                if i == 0:
+                    self.id = value
+                elif i == 1:
+                    self.width = value
+                elif i == 2:
+                    self.height = value
+                elif i == 3:
+                    self.x = value
+                elif i == 4:
+                    self.y = value
