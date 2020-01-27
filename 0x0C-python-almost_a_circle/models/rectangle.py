@@ -117,3 +117,12 @@ class Rectangle(Base):
             for key, value in kwargs.items():
                 if hasattr(self, key) is True:
                     setattr(self, key, value)
+
+    def to_dictionary(self):
+        """
+        Update the class Rectangle by adding the
+        public method def to_dictionary(self)
+        """
+        listsq = {'id': self.id, 'width': self.width, 'height': self.height,
+                  'x': self.x, 'y': self.y}
+        return listsq

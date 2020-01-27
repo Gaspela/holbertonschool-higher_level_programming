@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+import json
+import os
 class Base:
     """
     Base
@@ -12,3 +14,18 @@ class Base:
         else:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
+
+    @staticmethod
+    def to_json_string(list_dictionaries):
+        """
+        JSON is one of the standard formats for
+        sharing data representation
+        """
+        if list_dictionaries is None:
+            return "[]"
+        return json.dumps(list_dictionaries)
+    
+    
+
+
+    
