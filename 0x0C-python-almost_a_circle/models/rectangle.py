@@ -113,3 +113,8 @@ class Rectangle(Base):
                     self.x = value
                 elif i == 4:
                     self.y = value
+        else:
+            for key, value in kwargs.items():
+                if hasattr(self, key) is True:
+                    setattr(self, key, value)
+        
