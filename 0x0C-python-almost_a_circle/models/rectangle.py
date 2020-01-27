@@ -69,13 +69,15 @@ class Rectangle(Base):
         if value < 0:
             raise ValueError("y must be >= 0")
         self.__y = value
+    """*********************"""
 
     def area(self):
         """
         Area width * height
         """
         return self.width * self.height
-    
+    """*********************"""
+
     def display(self):
         """
         For i in j
@@ -84,3 +86,11 @@ class Rectangle(Base):
             print("")
         for j in range(self.height):
             print(" " * self.x + "#" * self.width)
+    """*********************"""
+    def __str__(self):
+        """
+        [Rectangle] (<id>) <x>/<y> - <width>/<height>
+        """
+        return "[Rectangle] ({}) {}/{} - {}/{}".
+        format(self.id, self.x, self.y, self.width, self.height)
+    
