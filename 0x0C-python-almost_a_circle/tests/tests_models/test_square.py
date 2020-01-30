@@ -229,11 +229,6 @@ class SquareTest(unittest.TestCase):
             "width must be an integer",
             str(e.exception))
         with self.assertRaises(TypeError) as e:
-            r.size = True
-        self.assertEqual(
-            "width must be an integer",
-            str(e.exception))
-        with self.assertRaises(TypeError) as e:
             r.size = {1, 2}
         self.assertEqual(
             "width must be an integer",
