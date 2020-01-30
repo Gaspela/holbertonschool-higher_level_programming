@@ -8,17 +8,33 @@ class Rectangle(Base):
     """
 
     def __init__(self, width, height, x=0, y=0, id=None):
+        super().__init__(id)
         self.width = width
         self.height = height
         self.x = x
         self.y = y
-        super().__init__(id)
+
     """*********************"""
     @property
     def width(self):
         """get width"""
         return self.__width
-
+    """*********************"""
+    @property
+    def height(self):
+        """get height"""
+        return self.__height
+    """*********************"""
+    @property
+    def x(self):
+        """Get x"""
+        return self.__x
+    """*********************"""
+    @property
+    def y(self):
+        """Get y"""
+        return self.__y
+    """*********************"""
     @width.setter
     def width(self, value):
         """Set width"""
@@ -28,11 +44,6 @@ class Rectangle(Base):
             raise ValueError("width must be > 0")
         self.__width = value
     """*********************"""
-    @property
-    def height(self):
-        """get height"""
-        return self.__height
-
     @height.setter
     def height(self, value):
         """Set height"""
@@ -42,11 +53,6 @@ class Rectangle(Base):
             raise ValueError("height must be > 0")
         self.__height = value
     """*********************"""
-    @property
-    def x(self):
-        """Get x"""
-        return self.__x
-
     @x.setter
     def x(self, value):
         """Ser x"""
@@ -56,11 +62,6 @@ class Rectangle(Base):
             raise ValueError("x must be >= 0")
         self.__x = value
     """*********************"""
-    @property
-    def y(self):
-        """Get y"""
-        return self.__y
-
     @y.setter
     def y(self, value):
         """Set y"""
@@ -83,7 +84,7 @@ class Rectangle(Base):
         For i in j
         """
         for i in range(self.y):
-            print("")
+            print()
         for j in range(self.height):
             print(" " * self.x + "#" * self.width)
     """*********************"""
@@ -92,7 +93,7 @@ class Rectangle(Base):
         """
         [Rectangle] (<id>) <x>/<y> - <width>/<height>
         """
-        return "[Rectangle] ({}) {}/{} - {}/{}".format(
+        return "[Rectangle] ({:d}) {:d}/{:d} - {:d}/{:d}".format(
             self.id, self.x, self.y, self.width, self.height)
     """*********************"""
 

@@ -51,6 +51,6 @@ class Square(Rectangle):
         Update the class Square by adding the
         public method def to_dictionary(self):
         """
-        
+
         listsq2 = {'id': self.id, 'size': self.size, 'x': self.x, 'y': self.y}
         return listsq2
