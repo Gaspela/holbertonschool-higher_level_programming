@@ -14,10 +14,10 @@ if __name__ == "__main__":
                 argv[1], argv[2], argv[3]))
 
     session = sessionmaker(bind=engine)
-    state = session.query(State).filter(State.name == argv[4]).all()
+    state = session().query(State).filter(State.name == argv[4]).all()
     if state:
         for states in state:
             print(states.id)
     else:
         print("Not found")
-    session.close()
+    session().close()
