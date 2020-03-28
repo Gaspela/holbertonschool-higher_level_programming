@@ -1,5 +1,9 @@
 #!/usr/bin/python3
-""" safe from MySQL injection """
+""" write a script that takes in arguments and displays all values,
+in the states table of hbtn_0e_0_usa where name matches the,
+argument. But this time, write one that is safe from MySQL injections!
+"""
+
 if __name__ == "__main__":
     import MySQLdb
     from sys import argv
