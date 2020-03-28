@@ -13,10 +13,11 @@ if __name__ == "__main__":
             "mysql+mysqldb://{}:{}@localhost/{}".format(
                 argv[1], argv[2], argv[3]))
 
-    session = sessionmaker(bind=engine)
-    Session = session().query(State).first()
-    if Session:
-        print("{}: {}".format(Session.id, Session.name))
+    Session = sessionmaker(bind=engine)
+    session = Session()
+    state = session.query(State).order_by(State.id).first()
+    if state:
+        print("{}: {}".format(state.id, state.name))
     else:
         print("Nothing")
-    session().close()
+    session.close()
