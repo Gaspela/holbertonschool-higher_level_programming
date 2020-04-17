@@ -1,4 +1,3 @@
-  
 #!/usr/bin/python3
 # takes in URL, sends request, and displays body of response
 import requests
