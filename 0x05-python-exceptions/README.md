@@ -1,50 +1,47 @@
-# Python - Hello, World - challenge
+<h1 class="gap">0x05. Python - Exceptions</h1>
+<article id="description" class="gap formatted-content">
+    <h2>Resources</h2>
 
-## Topics
-* Why Python programming is awesome (dont forget to tweet today, with the hashtag #pythoniscool :))
-* Who created Python
-* Who is Guido van Rossum
-* Where does the name Python come from
-* What is the Zen of Python
-* How to use the Python interpreter
-* How to print text and variables using print
-* How to use strings
-* What are indexing and slicing in Python
-* What is the official Holberton Python coding style and how to check your code with PEP 8
+<p><strong>Read or watch</strong>:</p>
 
-## Requirements
-* Linux Ubuntu 14.04 LTS
-* Python3 (version 3.4.3)
+<ul>
+<li><a href="/rltoken/IvW-V19TlPbmMnVTHNllUg" title="Errors and Exceptions" target="_blank">Errors and Exceptions</a> </li>
+<li><a href="/rltoken/uHg99jd88sVrhuGUDfwT8g" title="Learn to Program 11 Static &amp; Exception Handling" target="_blank">Learn to Program 11 Static &amp; Exception Handling</a> (<em>starting at minute 7</em>)</li>
+</ul>
 
-## Challeneges
+<h2>Learning Objectives</h2>
 
-#### 0. Run Python file
+<p>At the end of this project, you are expected to be able to <a href="/rltoken/eUfokzRpYIU1EKe689hSIA" title="explain to anyone" target="_blank">explain to anyone</a>, <strong>without the help of Google</strong>:</p>
 
-#### 1. Run inline
+<h3>General</h3>
 
-#### 2. Hello, print
+<ul>
+<li>Why Python programming is awesome (don’t forget to tweet today, with the hashtag #pythoniscool :))</li>
+<li>What’s the difference between errors and exceptions</li>
+<li>What are exceptions and how to use them</li>
+<li>When do we need to use exceptions</li>
+<li>How to correctly handle an exception</li>
+<li>What’s the purpose of catching exceptions</li>
+<li>How to raise a builtin exception</li>
+<li>When do we need to implement a clean-up action after an exception</li>
+</ul>
 
-#### 3. Print integer
+<h2>Requirements</h2>
 
-#### 4. Print float
+<h3>General</h3>
 
-#### 5. Print string
+<ul>
+<li>Allowed editors: <code>vi</code>, <code>vim</code>, <code>emacs</code></li>
+<li>All your files will be interpreted/compiled on Ubuntu 14.04 LTS using <code>python3</code> (version 3.4.3)</li>
+<li>All your files should end with a new line</li>
+<li>The first line of all your files should be exactly <code>#!/usr/bin/python3</code></li>
+<li>A <code>README.md</code> file, at the root of the folder of the project, is mandatory</li>
+<li>Your code should use the <code>PEP 8</code> style (version 1.7.*)</li>
+<li>All your files must be executable</li>
+<li>The length of your files will be tested using <code>wc</code></li>
+</ul>
 
-#### 6. Play with strings
-
-#### 7. Copy - Cut - Paste
-
-#### 8. Create a new sentence
-
-#### 9. Easter Egg
-
-#### 10. Linked list cycle
-
-#### 11. Hello, write
-
-#### 12. Compile
-
-#### 13. ByteCode -> Python #1
+  </article>
 
 ## Author
-Samir Millan | :octocat: [GitHub](http://github.com/gaspela04/)
+* **Samir millan** - [Gaspela04](https://github.com/Gaspela04)
